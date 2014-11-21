@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="16" height="9" tilewidth="70" tileheight="70" backgroundcolor="#707070">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="16" height="9" tilewidth="70" tileheight="70" backgroundcolor="#0055ff">
  <tileset firstgid="1" name="background-tiles" tilewidth="70" tileheight="70">
   <image source="../img/background-tiles.png" width="910" height="910"/>
  </tileset>
@@ -13,12 +13,12 @@
  </tileset>
  <layer name="background" width="16" height="9">
   <data encoding="base64" compression="zlib">
-   eJxjYBj6YBoZcvj0DBVgBcTFZOotBGJLIFbGg8PQMDY1AFghBhY=
+   eJxjYBj6YBoZcvj0DBVgBcTFZOotBGJLIFbGg8OQMC41AFNZBeM=
   </data>
  </layer>
  <layer name="collision" width="16" height="9" opacity="0">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFIxmsoxADAHQPCuE=
+   eJxjYBgFIxmsIxIro2GYOABM9wi1
   </data>
  </layer>
  <objectgroup name="trigger-entities"/>
