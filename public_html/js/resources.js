@@ -6,9 +6,13 @@ game.resources = [
 	 */
         {name: "background-tiles", type:"image", src: "data/img/background-tiles.png"},
         {name: "meta-tiles", type:"image", src: "data/img/meta-tiles.png"},
-        {name: "mario", type:"image", src: "data/img/player1.png"},
+        {name: "mario", type:"image", src: "data/img/Player.jpg"},
         {name: "trollface", type:"image", src: "data/img/trollface.jpg"},
         {name: "title-screen", type:"image", src: "data/img/Title-Screen1.png"},
+        {name: "Smile", type:"image", src: "data/img/Smile.png"},
+        {name: "Rage", type:"image", src: "data/img/Rage.jpg"},
+        {name: "CoolSun", type:"image", src: "data/img/CoolSun.jpg"},
+        {name: "Cloud2", type:"image", src: "data/img/Cloud2.png"},
         
 	/* Atlases 
 	 * @example
