@@ -1,3 +1,4 @@
+//mario and his size 
 game.PlayerEntity = me.Entity.extend({
     init: function(x, y, settings) {
         this._super(me.Entity, 'init', [x, y, {
@@ -25,9 +26,11 @@ game.PlayerEntity = me.Entity.extend({
 
     },
     update: function(delta) {
+        //key to move right
         if (me.input.isKeyPressed("right")) {
             this.body.vel.x += this.body.accel.x * me.timer.tick;
             this.flipX(false);
+        //key to move left
         } else if (me.input.isKeyPressed("left")) {
             this.flipX(true);
             this.body.vel.x -= this.body.accel.x * me.timer.tick;
@@ -173,12 +176,12 @@ game.Mushroom = me.Entity.extend({
     init: function(x, y, settings) {
         this._super(me.Entity, 'init', [x, y, {
                 image: "mushroom",
-                spritewidth: "58",
+                spritewidth: "70",
                 spriteheight: "64",
-                width: 58,
+                width: 70,
                 height: 64,
                 getShape: function() {
-                    return (new me.Rect(0, 0, 58, 64)).toPolygon();
+                    return (new me.Rect(0, 0, 70, 64)).toPolygon();
                 }
             }]);
 
