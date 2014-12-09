@@ -25,6 +25,8 @@ game.PlayerEntity = me.Entity.extend({
         me.game.viewport.follow(this.pos, me.game.viewport.AXIS.BOTH);
 
     },
+    
+    //is to update the player so it can go up left right jump
     update: function(delta) {
         //key to move right
         if (me.input.isKeyPressed("right")) {
@@ -40,14 +42,14 @@ game.PlayerEntity = me.Entity.extend({
 
         this.body.update(delta);
         me.collision.check(this, true, this.collideHandler.bind(this), true);
-
+        //key to move up
         if (me.input.isKeyPressed("jump")) {
             if (!this.body.jumping && !this.body.falling) {
                 this.body.vel.y = -this.body.maxVel.y * me.timer.tick;
                 this.body.jumping = true;
             }
         }
-
+        //sets idle small and  smalll  animations as well as big
         if (!this.big) {
             if (this.body.vel.x !== 0) {
                 if (!this.renderable.isCurrentAnimation("smallWalk")) {
@@ -74,6 +76,7 @@ game.PlayerEntity = me.Entity.extend({
         this._super(me.Entity, "update", [delta]);
         return true;
     },
+    //this allows you to change from big to small
     collideHandler: function(response) {
         var ydif = this.pos.y - response.b.pos.y;
 
@@ -115,7 +118,7 @@ game.LevelTrigger = me.Entity.extend({
 
 });
 
-
+//bad guy animations
 game.BadGuy = me.Entity.extend({
     init: function(x, y, settings) {
         this._super(me.Entity, 'init', [x, y, {
@@ -148,6 +151,7 @@ game.BadGuy = me.Entity.extend({
 
         this.body.setVelocity(3, 10);
     },
+    //this allows you to walk left
     update: function(delta) {
         this.body.update(delta);
         me.collision.check(this, true, this.collideHandler.bind(this), true);
@@ -172,6 +176,7 @@ game.BadGuy = me.Entity.extend({
 
 });
 
+//mushroom size and everything
 game.Mushroom = me.Entity.extend({
     init: function(x, y, settings) {
         this._super(me.Entity, 'init', [x, y, {
