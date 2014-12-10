@@ -1,4 +1,4 @@
-//mario and his size 
+//mario and his size and settings
 game.PlayerEntity = me.Entity.extend({
     init: function(x, y, settings) {
         this._super(me.Entity, 'init', [x, y, {
@@ -101,7 +101,7 @@ game.PlayerEntity = me.Entity.extend({
 
 });
 
-
+//triggers the doors so you can travel between levels
 game.LevelTrigger = me.Entity.extend({
     init: function(x, y, settings) {
         this._super(me.Entity, 'init', [x, y, settings]);
@@ -118,7 +118,7 @@ game.LevelTrigger = me.Entity.extend({
 
 });
 
-//bad guy animations
+//bad guy animations and settings
 game.BadGuy = me.Entity.extend({
     init: function(x, y, settings) {
         this._super(me.Entity, 'init', [x, y, {
@@ -176,7 +176,7 @@ game.BadGuy = me.Entity.extend({
 
 });
 
-//mushroom size and everything
+//mushroom size and settings
 game.Mushroom = me.Entity.extend({
     init: function(x, y, settings) {
         this._super(me.Entity, 'init', [x, y, {
