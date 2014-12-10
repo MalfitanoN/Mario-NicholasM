@@ -18,6 +18,10 @@ game.resources = [
     {name: "mushroom1", type: "image", src: "data/img/mushroom1.png"},
     {name: "PlayerBig", type: "image", src: "data/img/PlayerBig.png"},
     {name: "mushroom", type: "image", src: "data/img/Invincible.png"},
+    {name: "winscreen", type: "image", src: "data/img/winscreen.jpg"},
+    {name: "Derp", type: "image", src: "data/img/Derp.png"},
+    {name: "item-spritesheet", type: "image", src: "data/img/item-spritesheet.png"},
+    
     /* Atlases 
      * @example
      * {name: "example_tps", type: "tps", src: "data/img/example_tps.json"},
@@ -30,7 +34,8 @@ game.resources = [
      */
     {name: "mylevel01", type: "tmx", src: "data/map/mylevel01.tmx"},
     {name: "mylevel02", type: "tmx", src: "data/map/mylevel02.tmx"},
-    {name: "mylevel03", type: "tmx", src: "data/map/mylevel03.tmx"}
+    {name: "mylevel03", type: "tmx", src: "data/map/mylevel03.tmx"},
+    {name: "mylevel04", type: "tmx", src: "data/map/mylevel04.tmx"}
 
     /* Background music. 
      * @example
